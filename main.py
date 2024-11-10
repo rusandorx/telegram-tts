@@ -19,7 +19,6 @@ load_dotenv()
 
 
 def parse_text(text):
-    # Updated pattern to allow hyphens in the key
     pattern = r"\[([\w-]+)\]\s*([^[]+)"
     matches = re.findall(pattern, text)
 
